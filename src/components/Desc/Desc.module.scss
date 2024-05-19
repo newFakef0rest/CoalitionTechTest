@@ -1,0 +1,18 @@
+@import "../../scss/vars";
+
+.desc {
+  p {
+    color: $darkBlueText;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+  span {
+    display: inline-block;
+    color: $grayText;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../scss/vars";
+
+.line {
+  background-color: #f4f0fe;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  &__title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    select {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: $darkBlue;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  &__content {
+    width: 100%;
+  }
+  &__box {
+    // max-width: 700px;
+    width: 100%;
+  }
+  &__text {
+    margin-left: 36px;
+    width: 45%;
+  }
+  &__item {
+    padding-bottom: 17px;
+    position: relative;
+    padding-right: 75px;
+    &:first-child {
+      &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #cbc8d4;
+      }
+    }
+    &:last-child {
+      padding-top: 16px;
+    }
+  }
+  &__legend {
+    span {
+      color: $darkBlue;
+      font-size: 14px;
+      display: inline-block;
+      font-weight: 700;
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 8px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $pink;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &_second {
+      span {
+        &::before {
+          background-color: $purple;
+        }
+      }
+    }
+  }
+  &__pulse {
+    h4 {
+      font-size: 22px;
+      color: $darkBlue;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+    p {
+      padding-left: 8px;
+      font-size: 14px;
+      font-weight: 400;
+      color: $darkBlue;
+    }
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    &__text {
+      margin-top: 36px;
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+    &__item {
+      padding-right: 0;
+    }
+    &__description {
+      justify-content: center;
+    }
+  }
+}

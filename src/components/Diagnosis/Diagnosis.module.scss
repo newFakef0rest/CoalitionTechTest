@@ -1,0 +1,12 @@
+.diagnosis {
+  max-width: 766px;
+  // max-height: 1054px;
+  width: 100%;
+  margin-bottom: 20px;
+  @media (max-width: 1400px) {
+    max-width: 100%;
+  }
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+}

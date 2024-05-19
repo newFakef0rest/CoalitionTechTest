@@ -1,0 +1,108 @@
+@import "./_normalize.scss";
+@import "./_mixins.scss";
+@import "./vars.scss";
+
+* {
+  font-family: $manrope;
+}
+
+body {
+  background-color: #f6f7f8;
+  padding: 18px;
+  position: relative;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  padding: 0 -15px;
+  flex-wrap: wrap;
+}
+
+.col {
+  &__12 {
+    @include col(12);
+  }
+  &__11 {
+    @include col(11);
+  }
+  &__10 {
+    @include col(10);
+  }
+  &__9 {
+    @include col(9);
+  }
+  &__8 {
+    @include col(8);
+  }
+  &__7 {
+    @include col(7);
+  }
+  &__6 {
+    @include col(6);
+  }
+  &__5 {
+    @include col(5);
+  }
+  &__4 {
+    @include col(4);
+  }
+  &__3 {
+    @include col(3);
+  }
+  &__2 {
+    @include col(2);
+  }
+  &__1 {
+    @include col(1);
+  }
+}
+
+// @media (max-width: 1200px) {
+//     .container {
+//         max-width: 991px;
+//     }
+//     .col {
+//         &__6 {
+//             @include col(9);
+//         }
+//     }
+// }
+
+// @media (max-width: 992px) {
+//     .container {
+//         max-width: 768px;
+//     }
+//     .col {
+//         &__9 {
+//             @include col(12);
+//         }
+//         &__3 {
+//             @include col(9);
+//         }
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .col {
+//         &__6 {
+//             @include col(12);
+//         }
+//     }
+//     h1 {
+//         font-size: 30px;
+//     }
+//     .container {
+//         max-width: 567px;
+//     }
+// }
+
+// @media (max-width: 567px) {
+//     .container {
+//         max-width: 400px;
+//     }
+// }

@@ -1,0 +1,47 @@
+@import "../../scss/vars";
+
+.description {
+  padding: 16px;
+  max-width: 238px;
+  width: 100%;
+  border-radius: 12px;
+  &__image {
+    margin-bottom: 16px;
+  }
+  &__text {
+    margin-bottom: 17px;
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    p,
+    h3 {
+      color: $darkBlue;
+    }
+    h3 {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 41px;
+    }
+  }
+  &__state {
+    display: flex;
+    align-items: center;
+    span {
+      color: $darkBlue;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    img {
+      margin-right: 8px;
+    }
+  }
+  @media (max-width: 800px) {
+    max-width: 100%;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

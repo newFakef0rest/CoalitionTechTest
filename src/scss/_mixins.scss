@@ -1,0 +1,10 @@
+@mixin text ($fz, $fw, $c, $tt) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+    text-transform: $tt;
+}
+@mixin col ($col) {
+    flex: 0 1 calc($col / 12) * 100%;
+    padding: 0 15px;
+}

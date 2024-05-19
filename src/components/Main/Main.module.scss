@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+  &__box {
+    display: flex;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+}

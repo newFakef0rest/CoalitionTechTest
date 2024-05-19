@@ -1,0 +1,127 @@
+@import "../../scss/vars";
+
+.header {
+  margin-bottom: 32px;
+  padding: 12px 32px;
+  border-radius: 70px;
+  background-color: white;
+  &__items,
+  &__burger__items,
+  &__none {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 100%;
+  }
+  @media (max-width: 1200px) {
+    &__none {
+      display: none;
+    }
+  }
+  &__nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        border-radius: 41px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          // padding-left: 26px;
+          display: inline-block;
+          font-family: $manrope;
+          font-weight: 700;
+          font-size: 14px;
+          text-transform: capitalize;
+          color: $darkBlue;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__active {
+    background-color: $lightBlue;
+  }
+  &__log {
+    display: flex;
+    align-items: center;
+    &__info {
+      display: flex;
+      align-items: center;
+      padding-right: 16px;
+      position: relative;
+      &_image {
+        margin-right: 8px;
+      }
+      &::before {
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: #ededed;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    &__buttons {
+      padding-left: 12px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      button {
+        margin-right: 12px;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__burger {
+    display: none;
+    &__items {
+      display: none;
+      padding: 20px;
+    }
+    @media (max-width: 1200px) {
+      display: block;
+      cursor: pointer;
+      &__items {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        top: -100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 100000;
+        flex-direction: column;
+        transition: top 0.7s;
+        &__active {
+          top: 0;
+        }
+        nav {
+          width: 100%;
+          ul {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            li {
+              margin-right: 0;
+              width: 100%;
+              justify-content: center;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

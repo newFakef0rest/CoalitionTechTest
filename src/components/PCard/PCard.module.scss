@@ -1,0 +1,34 @@
+@import "../../scss/vars";
+
+.card {
+  display: flex;
+  align-items: center;
+  &__image {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span,
+    p {
+      color: $darkBlue;
+      text-transform: capitalize;
+      font-size: 14px;
+    }
+    span {
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+    p {
+      font-weight: 700;
+    }
+  }
+}
